@@ -13,7 +13,7 @@ int main()
 	cout << "please enter file name:";
 	getline (cin, filename);
 	cout << endl;
-	aesop.open("fable.txt");
+	aesop.open(filename);
 	while(getline(aesop, newline))
 	{
 		int i = 0;
