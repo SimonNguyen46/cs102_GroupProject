@@ -2,21 +2,23 @@
 lab.cpp
 */
 
-#include <iostream>
-#include <string>
-#include <fstream>
 #include "lab.h"
 
 int main()
 {
-    string newline;
-    ifstream aesop;
-    aesop.open("fable.txt");
-    while(getline(aesop, newline))
-    {
-        int i = 0;
-        searchPunc(newline, i);
-    }
-    aesop.close();
-    return 0;
+	string newline;
+	string filename;
+	ifstream aesop;
+
+	cout << "please enter file name:";
+	getline (cin, filename);
+	cout << endl;
+	aesop.open("fable.txt");
+	while(getline(aesop, newline))
+	{
+		int i = 0;
+		searchPunc(newline, i);
+	}
+	aesop.close();
+	return 0;
 }
