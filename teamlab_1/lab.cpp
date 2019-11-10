@@ -7,18 +7,10 @@ lab.cpp
 int main()
 {
 	string newline;
-	string filename;
-	ifstream aesop;
-
-	cout << "please enter file name:";
-	getline (cin, filename);
-	cout << endl;
-	aesop.open(filename);
-	while(getline(aesop, newline))
+	while(getline(cin, newline))
 	{
 		int i = 0;
 		searchPunc(newline, i);
 	}
-	aesop.close();
 	return 0;
 }
