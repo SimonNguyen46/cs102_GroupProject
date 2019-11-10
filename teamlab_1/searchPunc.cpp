@@ -1,5 +1,7 @@
 /*
 searchPunc.cpp
+The function will search the punctuation through the file.
+If the punctuation is not between double quotes, then a new line will be inserted after it.
 */
 
 #include "lab.h"
