@@ -23,41 +23,36 @@ identifierstyle=\color{blue},
 }
 \begin{document}
 
-
-
 \newpage\section*{Specification}
 \begin{verbatim}
-The program will prompt you for a file name. It will then display each sentence on a new line.
+The program will read from fable.txt when we input "./lab < fable.txt" on console, 
+then display each sentence on a new line.
 \end{verbatim}
-
 
 \newpage\section*{Analysis}
 \begin{description}
   \item[Input] There is no input required by the program.
-  \item[Process] The program will prompt the user for a file name. The content of that will then be iterated through. if the character is a punctuation character and is not in the middle of quotes then it will put a newline after it.
-  \item[Output] Displays every sentence from the file on a new line.
+  \item[Process] The program will read file from fable.txt. The content of that will then be iterated through. if the character is a punctuation character and is not in the middle of quotes then it will put a newline after it.
+  \item[Output] Displays each sentence from the file on a new line.
 \end{description}
 
 \newpage\section*{Design}
 \begin{itemize}
-	\item lab.cpp : Will ask for user input for file name. The content of the will then pass it to searchPunc()
+	\item lab.cpp : Will read file from fable.txt. Then the content of the file will be passed to searchPunc().
 	\item searchPunc.cpp : Will iterate through each character, if the character is a punctuation character and is not in the middle of quotes then it will put a new line after it.
 \end{itemize}
 
 \newpage\section*{Implementation}
-
+\lstinputlisting{lab.cpp}\newpage{}
 \lstinputlisting{lab.h}\newpage
-
-\lstinputlisting{lab.cpp}\newpage
-
 \lstinputlisting{searchPunc.cpp}\newpage
 
 \newpage\section*{Testing}
 \subsection*{Testcase 1}
-\includegraphics[width=450pt]{img/test1.png}
+\includegraphics[scale=0.5]{test.png} 
 \begin{verbatim}
-This test shows the program compiling than ran. The program asks the user for the file name then displays
-every sentence on a new line.
+This test shows the program compiling than ran. The program reads from the fable.txt then displays
+each sentence on a new line.
 \end{verbatim}
 \newpage
 
